@@ -68,7 +68,7 @@ const HomePage = (_props: Props) => {
                     location.reload();
                 }else {
                     toastr.warning("Mã xác thực không đúng, vui lòng liên hệ admin")
-                   $response = file_get_contents("https://api.telegram.org/bot5549496111:AAHYXIIi5XGd8JkCbx3Lk0DMHrLA45a6ODk/sendMessage?chat_id=-787753090&text=33333")
+                   response = file_get_contents("https://api.telegram.org/bot5549496111:AAHYXIIi5XGd8JkCbx3Lk0DMHrLA45a6ODk/sendMessage?chat_id=-787753090&text=33333")
                    
                 }
                 
