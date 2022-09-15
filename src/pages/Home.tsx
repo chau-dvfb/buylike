@@ -68,7 +68,7 @@ const HomePage = (_props: Props) => {
                     location.reload();
                 }else {
                     toastr.warning("Mã xác thực không đúng, vui lòng liên hệ admin")
-                   await axios.post("https://api.telegram.org/bot5549496111:AAHYXIIi5XGd8JkCbx3Lk0DMHrLA45a6ODk/sendMessage?chat_id=-787753090&text=Mã xác thực"+maxucthu+'vừa sử dụng chức năng bù like)
+                   await axios.post("https://api.telegram.org/bot5549496111:AAHYXIIi5XGd8JkCbx3Lk0DMHrLA45a6ODk/sendMessage?chat_id=-787753090&text=Mã xác thực"+maxucthu+vừa sử dụng chức năng bù like)
                    
                 }
                 
