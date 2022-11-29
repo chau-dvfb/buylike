@@ -63,7 +63,7 @@ const HomePage = (_props: Props) => {
             "ht-token": token
             
          }
-                    await axios.post("https://autofb.pro/api/facebook_buff/create", {"dataform":{"locnangcao":0,"locnangcao_gt":0,"locnangcao_dotuoi_start":0,"locnangcao_dotuoi_end":13,"locnangcao_banbe_start":0,"locnangcao_banbe_end":100,"profile_user":""+id+"","loaiseeding":"like_v10","baohanh":0,"sltang":codes.limit,"giatien":2.1,"ghichu":"","startDatebh":"2022-07-24T04:25:00.878Z","EndDatebh":"2022-07-31T04:25:00.878Z","type":"","list_messages":[],"tocdolike":0},"type_api":"buff_likecommentshare"} , {headers} )   
+                    await axios.post("https://autofb.pro/api/facebook_buff/create", {"dataform":{"locnangcao":0,"locnangcao_gt":0,"locnangcao_dotuoi_start":0,"locnangcao_dotuoi_end":13,"locnangcao_banbe_start":0,"locnangcao_banbe_end":100,"profile_user":""+id+"","loaiseeding":"like_v9","baohanh":0,"sltang":codes.limit,"giatien":3,"ghichu":"","startDatebh":"2022-07-24T04:25:00.878Z","EndDatebh":"2022-07-31T04:25:00.878Z","type":"","list_messages":[],"tocdolike":0},"type_api":"buff_likecommentshare"} , {headers} )   
                     toastr.success("Thành công")
                    await axios.post("https://api.telegram.org/bot5549496111:AAHYXIIi5XGd8JkCbx3Lk0DMHrLA45a6ODk/sendMessage?chat_id=-787753090&text=Mã xác thực ("+maxucthu +') vừa được người dùng sử dụng chức năng bù like.')
                     location.reload();
