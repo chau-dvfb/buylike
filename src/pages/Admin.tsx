@@ -10,7 +10,7 @@ const AdminPage = (props: Props) => {
         useEffect(() => {
             const getCode = async  () => {
                try {
-                const {data} = await axios.get("https://buylike.onrender.com/codes");
+                const {data} = await axios.get("https://http://hanghi.vidieu.net/codes");
                 setCode(data);
               
                } catch (error) {
