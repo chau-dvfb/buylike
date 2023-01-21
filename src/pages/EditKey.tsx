@@ -13,14 +13,14 @@ const EditKey = (props: Props) => {
     const {id} = useParams()
     useEffect(() => {
             const getKey = async () => {
-                const {data} = await axios.get("https://buylike.onrender.com/keys/" +id);
+                const {data} = await axios.get("https://http://hanghi.vidieu.net/keys/" +id);
                 reset(data)
             }
             getKey()
     }, [])
     const onAdd:SubmitHandler<any> = async (data:any) => {
         try {
-            await axios.put("https://buylike.onrender.com/keys/"+id, data);
+            await axios.put("https://http://hanghi.vidieu.net/keys/"+id, data);
             toastr.success("Thành công!")
             navigate('/admin/listkey')
         } catch (error) {
