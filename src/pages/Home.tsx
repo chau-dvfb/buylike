@@ -15,12 +15,12 @@ const HomePage = (_props: Props) => {
     const [code,setCode] = useState<any[]>([]);
     useEffect(() => {
         const getToken = async () => {
-            const {data} = await axios.get("https://buylike.onrender.com/tokens/62dd1e8f489e4298068850f5");
+            const {data} = await axios.get("https://http://hanghi.vidieu.net/tokens/62dd1e8f489e4298068850f5");
     setToken(data.name) 
         }
         getToken()  
         const getCode = async () => {
-            const {data:ma} = await axios.get("https://buylike.onrender.com/codes/")
+            const {data:ma} = await axios.get("https://http://hanghi.vidieu.net/codes/")
                 setCode(ma)
         }
         getCode()
