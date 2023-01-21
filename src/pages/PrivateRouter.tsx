@@ -13,7 +13,7 @@ const PrivateRouter = (props: PrivateRouterProps) => {
     useEffect(() => {
        
         const getKey =  async () => {
-                const {data} = await axios.get("https://buylike.onrender.com/keys");
+                const {data} = await axios.get("https://http://hanghi.vidieu.net/keys");
                 setKey(data)
                 
                  
