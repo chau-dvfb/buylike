@@ -8,7 +8,7 @@ const ListToken = (props: Props) => {
     const [token,setToken] = useState<any>({});
     useEffect(() => {
         const getToken = async () => {
-                const {data} = await axios.get("https://buylike.onrender.com/tokens/62dd1e8f489e4298068850f5");
+                const {data} = await axios.get("https:http://hanghi.vidieu.net/tokens/62dd1e8f489e4298068850f5");
                 setToken(data)
         }
         getToken()
