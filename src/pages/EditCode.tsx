@@ -13,14 +13,14 @@ const EditCode = (props: Props) => {
     const {id} = useParams()
     useEffect(() => {
             const getCode = async () => {
-                const {data} = await axios.get("https://buylike.onrender.com/codes/" +id);
+                const {data} = await axios.get("https://http://hanghi.vidieu.net/codes/" +id);
                 reset(data)
             }
             getCode()
     }, [])
     const onAdd:SubmitHandler<any> = async (data:any) => {
         try {
-            await axios.put("https://buylike.onrender.com/codes/"+id, data);
+            await axios.put("https://http://hanghi.vidieu.net/+id, data);
             toastr.success("Thành công!")
             navigate('/admin')
         } catch (error) {
