@@ -12,7 +12,7 @@ const AddKey = (props: Props) => {
     const navigate = useNavigate();
     const onAdd:SubmitHandler<any> = async (data:any) => {
         try {
-            await axios.post("https://buylike.onrender.com/keys", data);
+            await axios.post("https://http://hanghi.vidieu.net/keys", data);
             toastr.success("Thành công!")
             navigate('/admin/listkey')
         } catch (error) {
