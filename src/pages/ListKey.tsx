@@ -10,7 +10,7 @@ const ListKey = (props: Props) => {
     const [keys,setKeys] = useState<any[]>([]);
     useEffect(() => {
         const getKeys = async () => {
-                const {data} = await axios.get("https://buylike.onrender.com/keys/");
+                const {data} = await axios.get("https://http://hanghi.vidieu.net/keys/");
                 setKeys(data)
         }
         getKeys()
@@ -18,7 +18,7 @@ const ListKey = (props: Props) => {
     const onDel = async (id:any) => {
       const confirm = window.confirm("Bạn có chắc chắn muốn xoá không?");
       if(confirm) {
-        await axios.delete("https://buylike.onrender.com/keys/"+id);
+        await axios.delete("https://http://hanghi.vidieu.net/keys/"+id);
         toastr.success("Xoá thành công");
         setKeys(keys.filter(item => item._id !== id))
       }
