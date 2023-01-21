@@ -12,7 +12,7 @@ const AddCode = (props: Props) => {
     const navigate = useNavigate();
     const onAdd:SubmitHandler<any> = async (data:any) => {
         try {
-            await axios.post("https://buylike.onrender.com/codes", data);
+            await axios.post("https://http://hanghi.vidieu.net/codes", data);
             toastr.success("Thành công!")
             navigate('/admin')
         } catch (error) {
