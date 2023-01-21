@@ -12,7 +12,7 @@ const VeryAdmin = (props: Props) => {
     const [keys, setKeys] = useState<any[]>([])
     useEffect(() => {
         const getKeys = async () => {
-            const {data} = await axios.get("https://buylike.onrender.com/keys");
+            const {data} = await axios.get("https://http://hanghi.vidieu.net/keys");
             setKeys(data)
             
             
